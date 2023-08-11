@@ -5,6 +5,10 @@ import { useState } from 'react'; //import useState hook
 //import Intro component
 import Intro from '../Intro';
 
+import DataInfo from '../DataInfo';
+
+import DataSubmission from '../DataSubmission';
+
 function App() { //when called it returns everything in the return statement (so when it is rendered)
   /*
     Creates a React element but in a different way: JSX
@@ -61,6 +65,8 @@ function App() { //when called it returns everything in the return statement (so
         handleAddTopic={handleAddTopic}
       />
       The topics array - {topics.toString()}
+      <DataSubmission />
+      <DataInfo />
     </div>
   );
 }
