@@ -45,7 +45,7 @@ render() is a method that takes two arguments:
 */
 root.render( //react-dom does this! App is a fully functional react compoment
     <App /> 
-  // greeting
+  // {greeting}
 );
 
 // If you want to start measuring performance in your app, pass a function
