@@ -26,6 +26,7 @@ function App() { //when called it returns everything in the return statement (so
   //setState is a function that updates the state object
   //state is the current state of the object
   const [topics, setTopics] = useState([]);
+  //useState is a hook that lets you add state to functional components
 
  //individual topic that is used for topics array
   const [topic, setTopic] = useState('');
