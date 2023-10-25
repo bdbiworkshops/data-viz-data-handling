@@ -96,12 +96,13 @@ const DataInfo = () => {
             )}
             
             {/* Aggregated data */}
-            <h1>Average Temperature: {aggregatedWeather.toFixed(1)} F</h1>
+            {aggregatedWeather !== null && (
+            <h1>Average Temperature: {aggregatedWeather.toFixed(1)} F</h1>)}
 
             {/* Sorted data */}
             <h1>Sorted Weather Forecast</h1>
             <ul>
-                {sortedWeather.map((item, index) => (
+                {sortedWeather && sortedWeather.map((item, index) => (
                     <li key={index}>
                         <strong>Date:</strong> {new Date(item.dt * 1000).toLocaleDateString()}<br />
                         <strong>Time:</strong> {new Date(item.dt * 1000).toLocaleTimeString()}<br />

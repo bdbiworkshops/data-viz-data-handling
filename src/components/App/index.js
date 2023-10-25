@@ -58,14 +58,14 @@ function App() { //when called it returns everything in the return statement (so
       </header>
       
       {/* pass in all the props listed! */}
-      <Intro
+      {/* <Intro
         message={message}
         topic={topic}
         setTopic={setTopic}
         topics={topics}
         handleAddTopic={handleAddTopic}
       />
-      The topics array - {topics.toString()}
+      The topics array - {topics.toString()} */}
       <DataSubmission />
       <DataInfo />
     </div>
